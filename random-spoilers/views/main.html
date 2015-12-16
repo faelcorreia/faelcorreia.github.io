@@ -6,7 +6,7 @@
 	</div>
 	<div ng-if="ready" class="slide spoiler">
 		<h1><span>{{spoilers[index].spoiler}}</span></h1>
-		<h1><a ng-href="http://www.imdb.com/title/{{spoilers[index].imdb}}" target="_blank">{{movie.Title}}</a>, {{movie.Year}}</h1>
+		<i><h1><a ng-href="http://www.imdb.com/title/{{spoilers[index].imdb}}" target="_blank">{{movie.Title}}</a>, {{movie.Year}}</h1></i>
 		<button class="btn btn-large btn-primary" ng-click="generateSpoiler()">Next!</button>
 	</div>
 </div>
