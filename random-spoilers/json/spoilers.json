@@ -1,118 +1,372 @@
 [{
-	"imdb": "tt0114814",
-	"spoiler": "Verbal is Keyser Söze."
+	"spoiler": "Verbal is Keyser Söze.",
+	"movie": {
+		"imdb": "tt0114814",
+		"title": "The Usual Suspects",
+		"year": "1995"
+	}
 }, {
-	"imdb": "tt0086190",
-	"spoiler": "Darth Vader is Luke's father."
+	"spoiler": "Darth Vader is Luke's father.",
+	"movie": {
+		"imdb": "tt0086190",
+		"title": "Star Wars: Episode VI - Return of the Jedi",
+		"year": "1983"
+	}
 }, {
-	"imdb": "tt0137523",
-	"spoiler": "The narrator (Edward Norton) and Tyler (Brad Pitt) are the same person."
+	"spoiler": "The narrator (Edward Norton) and Tyler (Brad Pitt) are the same person.",
+	"movie": {
+		"imdb": "tt0137523",
+		"title": "Fight Club",
+		"year": "1999"
+	}
 }, {
-	"imdb": "tt0903747",
-	"spoiler": "Walter White dies, Jesse Pinkman doesn't."
+	"spoiler": "Walter White dies, Jesse Pinkman doesn't.",
+	"movie": {
+		"imdb": "tt0903747",
+		"title": "Breaking Bad",
+		"year": "2008–2013"
+	}
 }, {
-	"imdb": "tt1856010",
-	"spoiler": "Francis Underwood becomes President of United States."
+	"spoiler": "Francis Underwood becomes President of United States.",
+	"movie": {
+		"imdb": "tt1856010",
+		"title": "House of Cards",
+		"year": "2013–2018"
+	}
 }, {
-	"imdb": "tt0054215",
-	"spoiler": "Norman pretends being his mother."
+	"spoiler": "Norman pretends being his mother.",
+	"movie": {
+		"imdb": "tt0054215",
+		"title": "Psycho",
+		"year": "1960"
+	}
 }, {
-	"imdb": "tt0944947",
-	"spoiler": "Ned Stark is decapitated."
+	"spoiler": "Ned Stark is decapitated.",
+	"movie": {
+		"imdb": "tt0944947",
+		"title": "Game of Thrones",
+		"year": "2011–"
+	}
 }, {
-	"imdb": "tt0167404",
-	"spoiler": "Malcom Crowe is already dead the whole time."
+	"spoiler": "Malcom Crowe is already dead the whole time.",
+	"movie": {
+		"imdb": "tt0167404",
+		"title": "The Sixth Sense",
+		"year": "1999"
+	}
 }, {
-	"imdb": "tt2382009",
-	"spoiler": "Joe kills Seligman after he tries to rape her."
+	"spoiler": "Joe kills Seligman after he tries to rape her.",
+	"movie": {
+		"imdb": "tt2382009",
+		"title": "Nymphomaniac: Vol. II",
+		"year": "2013"
+	}
 }, {
-	"imdb": "tt0166924",
-	"spoiler": "Most of the movie is Betty's dream."
+	"spoiler": "Most of the movie is Betty's dream.",
+	"movie": {
+		"imdb": "tt0166924",
+		"title": "Mulholland Drive",
+		"year": "2001"
+	}
 }, {
-	"imdb": "tt1130884",
-	"spoiler": "Teddy Daniels is crazy."
+	"spoiler": "Teddy Daniels is crazy.",
+	"movie": {
+		"imdb": "tt1130884",
+		"title": "Shutter Island",
+		"year": "2010"
+	}
 }, {
-	"imdb": "tt0387564",
-	"spoiler": "The dead man on the floor isn't dead. He is Jigsaw."
+	"spoiler": "The dead man on the floor isn't dead. He is Jigsaw.",
+	"movie": {
+		"imdb": "tt0387564",
+		"title": "Saw",
+		"year": "2004"
+	}
 }, {
-	"imdb": "tt0063522",
-	"spoiler": "The boy is the devil-shaped kid."
+	"spoiler": "The boy is the devil-shaped kid.",
+	"movie": {
+		"imdb": "tt0063522",
+		"title": "Rosemary's Baby",
+		"year": "1968"
+	}
 }, {
-	"imdb": "tt0125659",
-	"spoiler": "César is frozen and everything is in his mind as part of the reality created by a cryogenics company."
+	"spoiler": "César is frozen and everything is in his mind as part of the reality created by a cryogenics company.",
+	"movie": {
+		"imdb": "tt0125659",
+		"title": "Open Your Eyes",
+		"year": "1997"
+	}
 }, {
-	"imdb": "tt0175142",
-	"spoiler": "Doofy is the killer."
+	"spoiler": "Doofy is the killer.",
+	"movie": {
+		"imdb": "tt0175142",
+		"title": "Scary Movie",
+		"year": "2000"
+	}
 }, {
-	"imdb": "tt0230600",
-	"spoiler": "Grace Stewart and her two kids are ghosts."
+	"spoiler": "Grace Stewart and her two kids are ghosts.",
+	"movie": {
+		"imdb": "tt0230600",
+		"title": "The Others",
+		"year": "2001"
+	}
 }, {
-	"imdb": "tt0417741",
-	"spoiler": "Snape kills Dumbledore."
+	"spoiler": "Snape kills Dumbledore.",
+	"movie": {
+		"imdb": "tt0417741",
+		"title": "Harry Potter and the Half-Blood Prince",
+		"year": "2009"
+	}
 }, {
-	"imdb": "tt2582846",
-	"spoiler": "Augustus Waters dies."
+	"spoiler": "Augustus Waters dies.",
+	"movie": {
+		"imdb": "tt2582846",
+		"title": "The Fault in Our Stars",
+		"year": "2014"
+	}
 }, {
-	"imdb": "tt0108778",
-	"spoiler": "Rachel and Ross end up together."
+	"spoiler": "Rachel and Ross end up together.",
+	"movie": {
+		"imdb": "tt0108778",
+		"title": "Friends",
+		"year": "1994–2004"
+	}
 }, {
-	"imdb": "tt0133093",
-	"spoiler": "Neo is the One."
+	"spoiler": "Neo is the One.",
+	"movie": {
+		"imdb": "tt0133093",
+		"title": "The Matrix",
+		"year": "1999"
+	}
 }, {
-	"imdb": "tt0033467",
-	"spoiler": "Rosebud is the name of Kane's sled from his childhood."
+	"spoiler": "Rosebud is the name of Kane's sled from his childhood.",
+	"movie": {
+		"imdb": "tt0033467",
+		"title": "Citizen Kane",
+		"year": "1941"
+	}
 }, {
-	"imdb": "tt0063442",
-	"spoiler": "The planet is Earth and the time is the future."
+	"spoiler": "The planet is Earth and the time is the future.",
+	"movie": {
+		"imdb": "tt0063442",
+		"title": "Planet of the Apes",
+		"year": "1968"
+	}
 }, {
-	"imdb": "tt0120338",
-	"spoiler": "Jack dies."
+	"spoiler": "Jack dies.",
+	"movie": {
+		"imdb": "tt0120338",
+		"title": "Titanic",
+		"year": "1997"
+	}
 }, {
-	"imdb": "tt0111161",
-	"spoiler": "There's a hole behind the Rita Hayworth poster."
+	"spoiler": "There's a hole behind the Rita Hayworth poster.",
+	"movie": {
+		"imdb": "tt0111161",
+		"title": "The Shawshank Redemption",
+		"year": "1994"
+	}
 }, {
-	"imdb": "tt0861739",
-	"spoiler": "Matias is killed by drug dealers."
+	"spoiler": "Matias is killed by drug dealers.",
+	"movie": {
+		"imdb": "tt0861739",
+		"title": "Elite Squad",
+		"year": "2007"
+	}
 }, {
-	"imdb": "tt1520211",
-	"spoiler": "Zombie Sophia had been locked up in the barn the whole time."
+	"spoiler": "Zombie Sophia had been locked up in the barn the whole time.",
+	"movie": {
+		"imdb": "tt1520211",
+		"title": "The Walking Dead",
+		"year": "2010–"
+	}
 }, {
-	"imdb": "tt1606375",
-	"spoiler": "Lady Sybil dies in bed in front of her family."
+	"spoiler": "Lady Sybil dies in bed in front of her family.",
+	"movie": {
+		"imdb": "tt1606375",
+		"title": "Downton Abbey",
+		"year": "2010–2015"
+	}
 }, {
-	"imdb": "tt0062622",
-	"spoiler": "HAL kills everyone except Dave."
+	"spoiler": "HAL kills everyone except Dave.",
+	"movie": {
+		"imdb": "tt0062622",
+		"title": "2001: A Space Odyssey",
+		"year": "1968"
+	}
 }, {
-	"imdb": "tt0169547",
-	"spoiler": "Lester is killed by his neighbor. Angela is a virgin."
+	"spoiler": "Lester is killed by his neighbor. Angela is a virgin.",
+	"movie": {
+		"imdb": "tt0169547",
+		"title": "American Beauty",
+		"year": "1999"
+	}
 }, {
-	"imdb": "tt0268978",
-	"spoiler": "Charles, William Parcher and Marcee are figments of John's imagination."
+	"spoiler": "Charles, William Parcher and Marcee are figments of John's imagination.",
+	"movie": {
+		"imdb": "tt0268978",
+		"title": "A Beautiful Mind",
+		"year": "2001"
+	}
 }, {
-	"imdb": "tt0110912",
-	"spoiler": "Vincent Vega dies."
+	"spoiler": "Vincent Vega dies.",
+	"movie": {
+		"imdb": "tt0110912",
+		"title": "Pulp Fiction",
+		"year": "1994"
+	}
 }, {
-	"imdb": "tt0116282",
-	"spoiler": "Gaear kills Jean and Carl. Marge spots him throwing the remains of Carl into wood chipper and arrests him."
+	"spoiler": "Gaear kills Jean and Carl. Marge spots him throwing the remains of Carl into wood chipper and arrests him.",
+	"movie": {
+		"imdb": "tt0116282",
+		"title": "Fargo",
+		"year": "1996"
+	}
 }, {
-	"imdb": "tt0172495",
-	"spoiler": "Maximus dies."
+	"spoiler": "Maximus dies.",
+	"movie": {
+		"imdb": "tt0172495",
+		"title": "Gladiator",
+		"year": "2000"
+	}
 }, {
-	"imdb": "tt0120689",
-	"spoiler": "The mouse dies."
+	"spoiler": "The mouse dies.",
+	"movie": {
+		"imdb": "tt0120689",
+		"title": "The Green Mile",
+		"year": "1999"
+	}
 }, {
-	"imdb": "tt1305806",
-	"spoiler": "Ricardo Morales is keeping Isidoro Gómez (the murderer) as prisoner for the last two decades."
+	"spoiler": "Ricardo Morales is keeping Isidoro Gómez (the murderer) as prisoner for the last two decades.",
+	"movie": {
+		"imdb": "tt1305806",
+		"title": "The Secret in Their Eyes",
+		"year": "2009"
+	}
 }, {
-	"imdb": "tt0482571",
-	"spoiler": "Borden has a twin brother."
+	"spoiler": "Borden has a twin brother.",
+	"movie": {
+		"imdb": "tt0482571",
+		"title": "The Prestige",
+		"year": "2006"
+	}
 }, {
-	"imdb": "tt1148204",
-	"spoiler": "Esther is a 33 years old homicidal maniac."
+	"spoiler": "Esther is a 33 years old homicidal maniac.",
+	"movie": {
+		"imdb": "tt1148204",
+		"title": "Orphan",
+		"year": "2009"
+	}
 }, {
-	"imdb": "tt0364569",
-	"spoiler": "Mi-do is Dae-su's daughter."
+	"spoiler": "Mi-do is Dae-su's daughter.",
+	"movie": {
+		"imdb": "tt0364569",
+		"title": "Oldboy",
+		"year": "2003"
+	}
 }, {
-	"imdb": "tt0209144",
-	"spoiler": "Leonard killed his wife with a high dose of insulin because she was testing him. The story of Sammy Jankis is his story. He already killed the guys that provoked his amnesia."
+	"spoiler": "The story of Sammy Jankis is his story. He already killed the guys that provoked his amnesia.",
+	"movie": {
+		"imdb": "tt0209144",
+		"title": "Memento",
+		"year": "2000"
+	}
+}, {
+	"spoiler": "His life is being watched by the whole world on TV.",
+	"movie": {
+		"imdb": "tt0120382",
+		"title": "The Truman Show",
+		"year": "1998"
+	}
+}, {
+	"spoiler": "Harry sets the bomb on the asteroid and dies.",
+	"movie": {
+		"imdb": "tt0120591",
+		"title": "Armageddon",
+		"year": "1998"
+	}
+}, {
+	"spoiler": "Guido is murdered by the Nazi army. His son is saved by USA.",
+	"movie": {
+		"imdb": "tt0118799",
+		"title": "Life Is Beautiful",
+		"year": "1997"
+	}
+}, {
+	"spoiler": "William Wallace dies in the end.",
+	"movie": {
+		"imdb": "tt0112573",
+		"title": "Braveheart",
+		"year": "1995"
+	}
+}, {
+	"spoiler": "Chuck Noland gets out of the island using a handmade raft and is saved by a big ship.",
+	"movie": {
+		"imdb": "tt0162222",
+		"title": "Cast Away",
+		"year": "2000"
+	}
+}, {
+	"spoiler": "Jack Torrance becomes crazy, tries to kill his family but dies. Wendy and Danny leaves the hotel.",
+	"movie": {
+		"imdb": "tt0081505",
+		"title": "The Shining",
+		"year": "1980"
+	}
+}, {
+	"spoiler": "John Oldman is a 14000 years old man and was Jesus Christ in the past.",
+	"movie": {
+		"imdb": "tt0756683",
+		"title": "The Man from Earth",
+		"year": "2007"
+	}
+}, {
+	"spoiler": "Benjamin Martin's two sons dies and he kills a lot of soldiers.",
+	"movie": {
+		"imdb": "tt0187393",
+		"title": "The Patriot",
+		"year": "2000"
+	}
+}, {
+	"spoiler": "Tony kills Manny because he married his sister behind his back and dies in the end.",
+	"movie": {
+		"imdb": "tt0086250",
+		"title": "Scarface",
+		"year": "1983"
+	}
+}, {
+	"spoiler": "The film is actually set in the present day. It is they who continue to play the monsters to preserve the myth.",
+	"movie": {
+		"imdb": "tt0368447",
+		"title": "The Village",
+		"year": "2004"
+	}
+}, {
+	"spoiler": "It isn't Jason doing the killing, it's his mother.",
+	"movie": {
+		"imdb": "tt0080761",
+		"title": "Friday the 13th",
+		"year": "1980"
+	}
+}, {
+	"spoiler": "All the crimes he committed were done in his head. Everyone is alive.",
+	"movie": {
+		"imdb": "tt0144084",
+		"title": "American Psycho",
+		"year": "2000"
+	}
+}, {
+	"spoiler": "Laura's son is trapped in the cellar. The noises were the sounds of him struggling to free himself. The ghost-boy is his spirit.",
+	"movie": {
+		"imdb": "tt0464141",
+		"title": "The Orphanage",
+		"year": "2007"
+	}
+}, {
+	"spoiler": "Hopeless, David kills everyone. Two minutes later the army turn up.",
+	"movie": {
+		"imdb": "tt0884328",
+		"title": "The Mist",
+		"year": "2007"
+	}
 }]

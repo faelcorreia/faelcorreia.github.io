@@ -1,1 +1,78 @@
-"use strict";angular.module("random-spoilers",["ngResource","ngAnimate","ui.router"]).config(["$stateProvider","$urlRouterProvider",function(e,r){e.state("app",{url:"/app",templateUrl:"views/app.html",controller:"AppCtrl","abstract":!0}).state("app.main",{url:"/main",templateUrl:"views/main.html",controller:"MainCtrl",data:{title:"Random Spoilers"}}),r.otherwise("/app/main")}]).controller("AppCtrl",["$scope",function(e){}]).controller("MainCtrl",["$scope","Spoilers","OMDb","$timeout",function(e,r,t,o){e.agreed=!1;var n=[];e.generateSpoiler=function(){e.ready=!1,o(function(){0==n.length&&i(e.spoilers.length);var r=Math.floor(Math.random()*n.length);e.index=n[r],n.splice(r,1);var o=t.get({i:e.spoilers[e.index].imdb},function(){e.movie=o,e.ready=!0})},1e3)},e["continue"]=function(){e.agreed=!0,e.generateSpoiler()};var i=function(e){for(var r=0;e>r;r++)n[r]=r},a=r.query(function(){e.spoilers=a})}]).factory("OMDb",["$resource",function(e){return e("http://www.omdbapi.com")}]).factory("Spoilers",["$resource",function(e){return e("json/spoilers.json")}]);
+'use strict';
+
+angular.module('random-spoilers', [
+    'ngResource',
+    'ngAnimate',
+    'ui.router'
+])
+
+.config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
+
+        $stateProvider
+
+            .state('app', {
+            url: '/app',
+            templateUrl: 'views/app.html',
+            controller: 'AppCtrl',
+            abstract: true
+        })
+
+        .state('app.main', {
+            url: '/main',
+            templateUrl: 'views/main.html',
+            controller: 'MainCtrl',
+            data: {
+                title: 'Random Spoilers'
+            }
+        })
+
+        $urlRouterProvider.otherwise('/app/main')
+    }
+])
+
+.controller('AppCtrl', ['$scope',
+    function($scope) {
+
+    }
+])
+
+.controller('MainCtrl', ['$scope', 'Spoilers', '$timeout',
+	function($scope, Spoilers, $timeout) {
+		$scope.agreed = false
+		var smartList = []
+		$scope.generateSpoiler = function() {
+			$scope.ready = false
+			$timeout(function() {
+				if (smartList.length == 0) {
+					generateSmartList($scope.spoilers.length)
+				}
+				var index = Math.floor(Math.random() * smartList.length)
+				$scope.index = smartList[index]
+				smartList.splice(index, 1)				
+				$scope.ready = true
+			}, 1000)
+		}
+
+		$scope.continue = function() {
+			$scope.agreed = true
+			$scope.generateSpoiler()
+		}
+
+		var generateSmartList = function(size) {
+			for (var i = 0; i < size; i++) {
+				smartList[i] = i
+			}
+		}
+
+		var spoilers = Spoilers.query(function() {
+			$scope.spoilers = spoilers
+		})
+	}
+])
+
+.factory('Spoilers', ['$resource',
+	function($resource) {
+		return $resource('json/spoilers.json')
+	}
+])
