@@ -2,6 +2,8 @@ let game;
 var song = false;
 var start = false;
 var score = 0;
+var maxScore = 0;
+var spaceKey;
 
 // global game options
 let gameOptions = {
@@ -54,7 +56,7 @@ class playGame extends Phaser.Scene {
         var bg = this.add.image(806, 394, 'background');
         bg.setAlpha(0.7);
         var style = { font: "65px Arial", fill: "#ff0044", align: "center", stroke: "white", strokeThickness: "4" };
-        this.add.text(16, 16, "Máximo: " + score, style);
+        this.add.text(16, 16, "Máximo: " + maxScore, style);
         score = 0;
         this.score = this.add.text(1200, 16, "Pontos: " + score, style);
         // group with all active platforms.
@@ -66,6 +68,7 @@ class playGame extends Phaser.Scene {
             }
         });
 
+        spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         // pool
         this.platformPool = this.add.group({
 
@@ -167,21 +170,19 @@ class playGame extends Phaser.Scene {
             this.playerJumps++;
         }
     }
+
     update() {
         this.score.setText("Pontos: " + score)
-        if (start) {
-            if (!song) {
-                var music = this.sound.add("song")
-                music.play();
-                song = true;
-            }
-        }
+        this.start_music()
         // game over
         if (this.player.y > game.config.height) {
             this.scene.start("PlayGame");
         }
         this.player.x = gameOptions.playerStartPosition;
-
+        // Press spacebar to jump
+        if (spaceKey.isDown){
+            this.jump()
+        }
 
         // recycling platforms
         let minDistance = game.config.width;
@@ -211,7 +212,22 @@ class playGame extends Phaser.Scene {
             this.addLongNeck(game.config.width);
         }
         score++;
+        if (score > maxScore){
+            maxScore = score;
+        }
     }
+
+    start_music(){
+        if (start) {
+            if (!song) {
+                var music = this.sound.add("song")
+                music.play();
+                music.loop = true;
+                song = true;
+            }
+        }
+    }
+
 };
 function resize() {
     let canvas = document.querySelector("canvas");
