@@ -1,7 +1,7 @@
 let game;
-var song = false;
-var start = false;
-var score = 0;
+let score = 0;
+let maxScore = 0;
+let song = false;
 
 // global game options
 let gameOptions = {
@@ -21,7 +21,7 @@ window.onload = function () {
         type: Phaser.AUTO,
         width: 1613,
         height: 788,
-        scene: playGame,
+        scene: [pauseGame, playGame],
         backgroundColor: 0xFFFFFF,
 
         // physics settings
@@ -38,6 +38,26 @@ window.onload = function () {
     window.addEventListener("resize", resize, false);
 }
 
+class pauseGame extends Phaser.Scene {
+    constructor() {
+        super("PauseGame");
+    }
+    preload() { }
+    create() {
+        this.input.on("pointerdown", this.start, this);
+        this.input.keyboard.on('keydown_SPACE', this.start, this);
+        var style = { font: "65px Arial", fill: "#000000", align: "center" };
+        if (score > maxScore) {
+            maxScore = score;
+        }
+        this.add.text(450, 150, "Clique ou espaço\n\npara iniciar o jogo", style);
+    }
+    start() {
+        this.scene.start("PlayGame");
+    }
+    update() {}
+};
+
 // playGame scene
 class playGame extends Phaser.Scene {
     constructor() {
@@ -51,10 +71,19 @@ class playGame extends Phaser.Scene {
         this.load.image("longneck", "assets/longneck.png");
     }
     create() {
+        if (!song) {
+            var music = this.sound.add("song")
+            music.play();
+            music.loop = true;
+            song = true;
+        }
         var bg = this.add.image(806, 394, 'background');
         bg.setAlpha(0.7);
         var style = { font: "65px Arial", fill: "#ff0044", align: "center", stroke: "white", strokeThickness: "4" };
-        this.add.text(16, 16, "Máximo: " + score, style);
+        if (score > maxScore) {
+            maxScore = score;
+        }
+        this.add.text(16, 16, "Máximo: " + maxScore, style);
         score = 0;
         this.score = this.add.text(1200, 16, "Pontos: " + score, style);
         // group with all active platforms.
@@ -113,6 +142,7 @@ class playGame extends Phaser.Scene {
         })
         // checking for input
         this.input.on("pointerdown", this.jump, this);
+        this.input.keyboard.on('keydown_SPACE', this.jump, this);
     }
 
     // the core of the script: platform are added from the pool or created on the fly
@@ -158,7 +188,6 @@ class playGame extends Phaser.Scene {
 
     // the player jumps when on the ground, or once in the air as long as there are jumps left and the first jump was on the ground
     jump() {
-        start = true;
         if (this.player.body.touching.down || (this.playerJumps > 0 && this.playerJumps < gameOptions.jumps)) {
             if (this.player.body.touching.down) {
                 this.playerJumps = 0;
@@ -169,13 +198,6 @@ class playGame extends Phaser.Scene {
     }
     update() {
         this.score.setText("Pontos: " + score)
-        if (start) {
-            if (!song) {
-                var music = this.sound.add("song")
-                music.play();
-                song = true;
-            }
-        }
         // game over
         if (this.player.y > game.config.height) {
             this.scene.start("PlayGame");
