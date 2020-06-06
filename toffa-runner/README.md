@@ -2,11 +2,6 @@
 
 Um runner com um personagem muito especial.
 
-## Bugs conhecidos
-
-- Som não fica em loop
-- Música só começa depois do primeiro pulo
-
 ## Roadmap
 
 - Fichinha da Jú permite você voltar de onde estava
