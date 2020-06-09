@@ -180,7 +180,7 @@ class playGame extends Phaser.Scene {
             this.itemPool.remove(item);
         }
         else {
-            item = this.physics.add.sprite(posX, 380, "item");
+            item = this.physics.add.sprite(posX, 350, "item");
             var ratio = item.displayHeight / item.displayWidth;
             item.displayWidth = 150;
             item.displayHeight = item.displayWidth * ratio;
