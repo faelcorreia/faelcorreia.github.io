@@ -57,7 +57,7 @@ class pauseGame extends Phaser.Scene {
     start() {
         this.scene.start("PlayGame");
     }
-    update() {}
+    update() { }
 };
 
 // playGame scene
